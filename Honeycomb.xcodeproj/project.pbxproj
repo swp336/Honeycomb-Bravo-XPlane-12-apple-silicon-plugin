@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA27006E2BD951CC00D6E59A /* Bravo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700362BD951CC00D6E59A /* Bravo.cpp */; };
+		AA27006F2BD951CC00D6E59A /* Bravo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700372BD951CC00D6E59A /* Bravo.hpp */; };
+		AA2700702BD951CC00D6E59A /* BravoProfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700382BD951CC00D6E59A /* BravoProfile.cpp */; };
+		AA2700712BD951CC00D6E59A /* BravoProfile.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700392BD951CC00D6E59A /* BravoProfile.hpp */; };
+		AA2700722BD951CC00D6E59A /* XPCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA27003A2BD951CC00D6E59A /* XPCommand.cpp */; };
+		AA2700732BD951CC00D6E59A /* XPCommand.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27003B2BD951CC00D6E59A /* XPCommand.hpp */; };
+		AA2700742BD951CC00D6E59A /* APButtonLabel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27003D2BD951CC00D6E59A /* APButtonLabel.hpp */; };
+		AA2700752BD951CC00D6E59A /* APButtons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA27003E2BD951CC00D6E59A /* APButtons.cpp */; };
+		AA2700762BD951CC00D6E59A /* APButtons.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27003F2BD951CC00D6E59A /* APButtons.hpp */; };
+		AA2700772BD951CC00D6E59A /* BravoControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700402BD951CC00D6E59A /* BravoControls.cpp */; };
+		AA2700782BD951CC00D6E59A /* BravoControls.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700412BD951CC00D6E59A /* BravoControls.hpp */; };
+		AA2700792BD951CC00D6E59A /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700422BD951CC00D6E59A /* Button.cpp */; };
+		AA27007A2BD951CC00D6E59A /* Button.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700432BD951CC00D6E59A /* Button.hpp */; };
+		AA27007B2BD951CC00D6E59A /* RotaryButtonLabel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700442BD951CC00D6E59A /* RotaryButtonLabel.hpp */; };
+		AA27007C2BD951CC00D6E59A /* RotaryButtons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700452BD951CC00D6E59A /* RotaryButtons.cpp */; };
+		AA27007D2BD951CC00D6E59A /* RotaryButtons.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700462BD951CC00D6E59A /* RotaryButtons.hpp */; };
+		AA27007E2BD951CC00D6E59A /* Switch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700472BD951CC00D6E59A /* Switch.cpp */; };
+		AA27007F2BD951CC00D6E59A /* Switch.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700482BD951CC00D6E59A /* Switch.hpp */; };
+		AA2700802BD951CC00D6E59A /* Switches.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700492BD951CC00D6E59A /* Switches.cpp */; };
+		AA2700812BD951CC00D6E59A /* Switches.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27004A2BD951CC00D6E59A /* Switches.hpp */; };
+		AA2700822BD951CC00D6E59A /* SwitchLabel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27004B2BD951CC00D6E59A /* SwitchLabel.hpp */; };
+		AA2700832BD951CC00D6E59A /* Toggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA27004C2BD951CC00D6E59A /* Toggle.cpp */; };
+		AA2700842BD951CC00D6E59A /* Toggle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27004D2BD951CC00D6E59A /* Toggle.hpp */; };
+		AA2700852BD951CC00D6E59A /* ToggleLabel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27004E2BD951CC00D6E59A /* ToggleLabel.hpp */; };
+		AA2700862BD951CC00D6E59A /* ToggleSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA27004F2BD951CC00D6E59A /* ToggleSet.cpp */; };
+		AA2700872BD951CC00D6E59A /* ToggleSet.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700502BD951CC00D6E59A /* ToggleSet.hpp */; };
+		AA2700882BD951CC00D6E59A /* BravoJSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700522BD951CC00D6E59A /* BravoJSON.cpp */; };
+		AA2700892BD951CC00D6E59A /* BravoJSON.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700532BD951CC00D6E59A /* BravoJSON.hpp */; };
+		AA27008A2BD951CC00D6E59A /* json.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700542BD951CC00D6E59A /* json.hpp */; };
+		AA27008B2BD951CC00D6E59A /* Annunciators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700562BD951CC00D6E59A /* Annunciators.cpp */; };
+		AA27008C2BD951CC00D6E59A /* Annunciators.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700572BD951CC00D6E59A /* Annunciators.hpp */; };
+		AA27008D2BD951CC00D6E59A /* BravoLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700582BD951CC00D6E59A /* BravoLights.cpp */; };
+		AA27008E2BD951CC00D6E59A /* BravoLights.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700592BD951CC00D6E59A /* BravoLights.hpp */; };
+		AA27008F2BD951CC00D6E59A /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA27005A2BD951CC00D6E59A /* StateMachine.cpp */; };
+		AA2700902BD951CC00D6E59A /* StateMachine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27005B2BD951CC00D6E59A /* StateMachine.hpp */; };
+		AA2700912BD951CC00D6E59A /* BravoUSB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA27005D2BD951CC00D6E59A /* BravoUSB.cpp */; };
+		AA2700922BD951CC00D6E59A /* BravoUSB.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27005E2BD951CC00D6E59A /* BravoUSB.hpp */; };
+		AA2700932BD951CC00D6E59A /* hid.c in Sources */ = {isa = PBXBuildFile; fileRef = AA27005F2BD951CC00D6E59A /* hid.c */; };
+		AA2700942BD951CC00D6E59A /* hidapi_darwin.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2700602BD951CC00D6E59A /* hidapi_darwin.h */; };
+		AA2700952BD951CC00D6E59A /* hidapi.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2700612BD951CC00D6E59A /* hidapi.h */; };
+		AA2700962BD951CC00D6E59A /* DataRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700632BD951CC00D6E59A /* DataRef.cpp */; };
+		AA2700972BD951CC00D6E59A /* DataRef.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2700642BD951CC00D6E59A /* DataRef.h */; };
+		AA2700982BD951CC00D6E59A /* Honeycomb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700652BD951CC00D6E59A /* Honeycomb.cpp */; };
+		AA2700992BD951CC00D6E59A /* Honeycomb.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2700662BD951CC00D6E59A /* Honeycomb.h */; };
+		AA27009A2BD951CC00D6E59A /* Plugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700672BD951CC00D6E59A /* Plugin.cpp */; };
+		AA27009B2BD951CC00D6E59A /* Plugin.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA2700682BD951CC00D6E59A /* Plugin.hpp */; };
+		AA27009C2BD951CC00D6E59A /* XPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2700692BD951CC00D6E59A /* XPlane.cpp */; };
+		AA27009D2BD951CC00D6E59A /* XPlane.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27006A2BD951CC00D6E59A /* XPlane.hpp */; };
+		AA27009E2BD951CC00D6E59A /* XPlaneEnvironment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AA27006B2BD951CC00D6E59A /* XPlaneEnvironment.hpp */; };
+		AA309AB82BD6B81D00379F80 /* XPLM in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AA4955B329C8953B00513FFA /* XPLM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AA309AC02BD6BEC100379F80 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC39BCA2A2E14E700DC80C0 /* AppKit.framework */; };
+		AA59D5992BD9286900107700 /* XPLM in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4955B329C8953B00513FFA /* XPLM */; };
+		AA79A1B529C76719001967EF /* XPLMCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17029C765EF001967EF /* XPLMCamera.h */; };
+		AA79A1B629C76719001967EF /* XPLMDataAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17829C765EF001967EF /* XPLMDataAccess.h */; };
+		AA79A1B729C76719001967EF /* XPLMDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17129C765EF001967EF /* XPLMDefs.h */; };
+		AA79A1B829C76719001967EF /* XPLMDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17329C765EF001967EF /* XPLMDisplay.h */; };
+		AA79A1B929C76719001967EF /* XPLMGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17529C765EF001967EF /* XPLMGraphics.h */; };
+		AA79A1BA29C76719001967EF /* XPLMInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17629C765EF001967EF /* XPLMInstance.h */; };
+		AA79A1BB29C76719001967EF /* XPLMMap.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17929C765EF001967EF /* XPLMMap.h */; };
+		AA79A1BC29C76719001967EF /* XPLMMenus.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17729C765EF001967EF /* XPLMMenus.h */; };
+		AA79A1BD29C76719001967EF /* XPLMNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17F29C765EF001967EF /* XPLMNavigation.h */; };
+		AA79A1BE29C76719001967EF /* XPLMPlanes.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17A29C765EF001967EF /* XPLMPlanes.h */; };
+		AA79A1BF29C76719001967EF /* XPLMPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17B29C765EF001967EF /* XPLMPlugin.h */; };
+		AA79A1C029C76719001967EF /* XPLMProcessing.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17229C765EF001967EF /* XPLMProcessing.h */; };
+		AA79A1C129C76719001967EF /* XPLMScenery.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17D29C765EF001967EF /* XPLMScenery.h */; };
+		AA79A1C229C76719001967EF /* XPLMSound.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17429C765EF001967EF /* XPLMSound.h */; };
+		AA79A1C329C76719001967EF /* XPLMUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17E29C765EF001967EF /* XPLMUtilities.h */; };
+		AA79A1C429C76719001967EF /* XPLMWeather.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A17C29C765EF001967EF /* XPLMWeather.h */; };
+		AA79A1C529C7672D001967EF /* XPCBroadcaster.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A1AD29C76691001967EF /* XPCBroadcaster.h */; };
+		AA79A1C629C7672D001967EF /* XPCDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A1A929C76691001967EF /* XPCDisplay.h */; };
+		AA79A1C729C7672D001967EF /* XPCListener.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A1AA29C76691001967EF /* XPCListener.h */; };
+		AA79A1C829C7672D001967EF /* XPCProcessing.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A1B129C76691001967EF /* XPCProcessing.h */; };
+		AA79A1C929C7672D001967EF /* XPCWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A1AC29C76691001967EF /* XPCWidget.h */; };
+		AA79A1CA29C7672D001967EF /* XPCWidgetAttachments.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A1AF29C76691001967EF /* XPCWidgetAttachments.h */; };
+		AA79A1CC29C76743001967EF /* XPUIGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A18C29C7663F001967EF /* XPUIGraphics.h */; };
+		AA79A1CD29C76743001967EF /* XPWidgetDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A18D29C7663F001967EF /* XPWidgetDefs.h */; };
+		AA79A1CE29C76743001967EF /* XPWidgets.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A18F29C7663F001967EF /* XPWidgets.h */; };
+		AA79A1CF29C76743001967EF /* XPWidgetUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79A18B29C7663F001967EF /* XPWidgetUtils.h */; };
+		AAFAF9132BD94AEB00E6ADF6 /* libhidapi.0.14.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AAAC0A222BD91E310031DC37 /* libhidapi.0.14.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA79A13C29C76530001967EF /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AAFAF9132BD94AEB00E6ADF6 /* libhidapi.0.14.0.dylib in Embed Libraries */,
+				AA309AB82BD6B81D00379F80 /* XPLM in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA2700362BD951CC00D6E59A /* Bravo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bravo.cpp; sourceTree = "<group>"; };
+		AA2700372BD951CC00D6E59A /* Bravo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bravo.hpp; sourceTree = "<group>"; };
+		AA2700382BD951CC00D6E59A /* BravoProfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BravoProfile.cpp; sourceTree = "<group>"; };
+		AA2700392BD951CC00D6E59A /* BravoProfile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BravoProfile.hpp; sourceTree = "<group>"; };
+		AA27003A2BD951CC00D6E59A /* XPCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPCommand.cpp; sourceTree = "<group>"; };
+		AA27003B2BD951CC00D6E59A /* XPCommand.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = XPCommand.hpp; sourceTree = "<group>"; };
+		AA27003D2BD951CC00D6E59A /* APButtonLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = APButtonLabel.hpp; sourceTree = "<group>"; };
+		AA27003E2BD951CC00D6E59A /* APButtons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = APButtons.cpp; sourceTree = "<group>"; };
+		AA27003F2BD951CC00D6E59A /* APButtons.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = APButtons.hpp; sourceTree = "<group>"; };
+		AA2700402BD951CC00D6E59A /* BravoControls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BravoControls.cpp; sourceTree = "<group>"; };
+		AA2700412BD951CC00D6E59A /* BravoControls.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BravoControls.hpp; sourceTree = "<group>"; };
+		AA2700422BD951CC00D6E59A /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		AA2700432BD951CC00D6E59A /* Button.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Button.hpp; sourceTree = "<group>"; };
+		AA2700442BD951CC00D6E59A /* RotaryButtonLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RotaryButtonLabel.hpp; sourceTree = "<group>"; };
+		AA2700452BD951CC00D6E59A /* RotaryButtons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RotaryButtons.cpp; sourceTree = "<group>"; };
+		AA2700462BD951CC00D6E59A /* RotaryButtons.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RotaryButtons.hpp; sourceTree = "<group>"; };
+		AA2700472BD951CC00D6E59A /* Switch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Switch.cpp; sourceTree = "<group>"; };
+		AA2700482BD951CC00D6E59A /* Switch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Switch.hpp; sourceTree = "<group>"; };
+		AA2700492BD951CC00D6E59A /* Switches.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Switches.cpp; sourceTree = "<group>"; };
+		AA27004A2BD951CC00D6E59A /* Switches.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Switches.hpp; sourceTree = "<group>"; };
+		AA27004B2BD951CC00D6E59A /* SwitchLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SwitchLabel.hpp; sourceTree = "<group>"; };
+		AA27004C2BD951CC00D6E59A /* Toggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Toggle.cpp; sourceTree = "<group>"; };
+		AA27004D2BD951CC00D6E59A /* Toggle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Toggle.hpp; sourceTree = "<group>"; };
+		AA27004E2BD951CC00D6E59A /* ToggleLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ToggleLabel.hpp; sourceTree = "<group>"; };
+		AA27004F2BD951CC00D6E59A /* ToggleSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToggleSet.cpp; sourceTree = "<group>"; };
+		AA2700502BD951CC00D6E59A /* ToggleSet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ToggleSet.hpp; sourceTree = "<group>"; };
+		AA2700522BD951CC00D6E59A /* BravoJSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BravoJSON.cpp; sourceTree = "<group>"; };
+		AA2700532BD951CC00D6E59A /* BravoJSON.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BravoJSON.hpp; sourceTree = "<group>"; };
+		AA2700542BD951CC00D6E59A /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		AA2700562BD951CC00D6E59A /* Annunciators.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Annunciators.cpp; sourceTree = "<group>"; };
+		AA2700572BD951CC00D6E59A /* Annunciators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Annunciators.hpp; sourceTree = "<group>"; };
+		AA2700582BD951CC00D6E59A /* BravoLights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BravoLights.cpp; sourceTree = "<group>"; };
+		AA2700592BD951CC00D6E59A /* BravoLights.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BravoLights.hpp; sourceTree = "<group>"; };
+		AA27005A2BD951CC00D6E59A /* StateMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		AA27005B2BD951CC00D6E59A /* StateMachine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StateMachine.hpp; sourceTree = "<group>"; };
+		AA27005D2BD951CC00D6E59A /* BravoUSB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BravoUSB.cpp; sourceTree = "<group>"; };
+		AA27005E2BD951CC00D6E59A /* BravoUSB.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BravoUSB.hpp; sourceTree = "<group>"; };
+		AA27005F2BD951CC00D6E59A /* hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hid.c; sourceTree = "<group>"; };
+		AA2700602BD951CC00D6E59A /* hidapi_darwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hidapi_darwin.h; sourceTree = "<group>"; };
+		AA2700612BD951CC00D6E59A /* hidapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hidapi.h; sourceTree = "<group>"; };
+		AA2700632BD951CC00D6E59A /* DataRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataRef.cpp; sourceTree = "<group>"; };
+		AA2700642BD951CC00D6E59A /* DataRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRef.h; sourceTree = "<group>"; };
+		AA2700652BD951CC00D6E59A /* Honeycomb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Honeycomb.cpp; sourceTree = "<group>"; };
+		AA2700662BD951CC00D6E59A /* Honeycomb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Honeycomb.h; sourceTree = "<group>"; };
+		AA2700672BD951CC00D6E59A /* Plugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plugin.cpp; sourceTree = "<group>"; };
+		AA2700682BD951CC00D6E59A /* Plugin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Plugin.hpp; sourceTree = "<group>"; };
+		AA2700692BD951CC00D6E59A /* XPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPlane.cpp; sourceTree = "<group>"; };
+		AA27006A2BD951CC00D6E59A /* XPlane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = XPlane.hpp; sourceTree = "<group>"; };
+		AA27006B2BD951CC00D6E59A /* XPlaneEnvironment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = XPlaneEnvironment.hpp; sourceTree = "<group>"; };
+		AA2AA4642BA3102C00C179CC /* COPYING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = COPYING.md; sourceTree = "<group>"; };
+		AA4955B329C8953B00513FFA /* XPLM */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = XPLM; path = Frameworks/XPLM; sourceTree = "<group>"; };
+		AA4955B429C8953B00513FFA /* XPWidgets */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = XPWidgets; path = Frameworks/XPWidgets; sourceTree = "<group>"; };
+		AA79A12929C76470001967EF /* Honeycomb.xpl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Honeycomb.xpl; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA79A17029C765EF001967EF /* XPLMCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMCamera.h; sourceTree = "<group>"; };
+		AA79A17129C765EF001967EF /* XPLMDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMDefs.h; sourceTree = "<group>"; };
+		AA79A17229C765EF001967EF /* XPLMProcessing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMProcessing.h; sourceTree = "<group>"; };
+		AA79A17329C765EF001967EF /* XPLMDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMDisplay.h; sourceTree = "<group>"; };
+		AA79A17429C765EF001967EF /* XPLMSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMSound.h; sourceTree = "<group>"; };
+		AA79A17529C765EF001967EF /* XPLMGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMGraphics.h; sourceTree = "<group>"; };
+		AA79A17629C765EF001967EF /* XPLMInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMInstance.h; sourceTree = "<group>"; };
+		AA79A17729C765EF001967EF /* XPLMMenus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMMenus.h; sourceTree = "<group>"; };
+		AA79A17829C765EF001967EF /* XPLMDataAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMDataAccess.h; sourceTree = "<group>"; };
+		AA79A17929C765EF001967EF /* XPLMMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMMap.h; sourceTree = "<group>"; };
+		AA79A17A29C765EF001967EF /* XPLMPlanes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMPlanes.h; sourceTree = "<group>"; };
+		AA79A17B29C765EF001967EF /* XPLMPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMPlugin.h; sourceTree = "<group>"; };
+		AA79A17C29C765EF001967EF /* XPLMWeather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMWeather.h; sourceTree = "<group>"; };
+		AA79A17D29C765EF001967EF /* XPLMScenery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMScenery.h; sourceTree = "<group>"; };
+		AA79A17E29C765EF001967EF /* XPLMUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMUtilities.h; sourceTree = "<group>"; };
+		AA79A17F29C765EF001967EF /* XPLMNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPLMNavigation.h; sourceTree = "<group>"; };
+		AA79A18B29C7663F001967EF /* XPWidgetUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPWidgetUtils.h; sourceTree = "<group>"; };
+		AA79A18C29C7663F001967EF /* XPUIGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPUIGraphics.h; sourceTree = "<group>"; };
+		AA79A18D29C7663F001967EF /* XPWidgetDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPWidgetDefs.h; sourceTree = "<group>"; };
+		AA79A18E29C7663F001967EF /* XPStandardWidgets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPStandardWidgets.h; sourceTree = "<group>"; };
+		AA79A18F29C7663F001967EF /* XPWidgets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPWidgets.h; sourceTree = "<group>"; };
+		AA79A1A929C76691001967EF /* XPCDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCDisplay.h; sourceTree = "<group>"; };
+		AA79A1AA29C76691001967EF /* XPCListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCListener.h; sourceTree = "<group>"; };
+		AA79A1AB29C76691001967EF /* XPCWidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCWidget.cpp; sourceTree = "<group>"; };
+		AA79A1AC29C76691001967EF /* XPCWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCWidget.h; sourceTree = "<group>"; };
+		AA79A1AD29C76691001967EF /* XPCBroadcaster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCBroadcaster.h; sourceTree = "<group>"; };
+		AA79A1AE29C76691001967EF /* XPCWidgetAttachments.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCWidgetAttachments.cpp; sourceTree = "<group>"; };
+		AA79A1AF29C76691001967EF /* XPCWidgetAttachments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCWidgetAttachments.h; sourceTree = "<group>"; };
+		AA79A1B029C76691001967EF /* XPCListener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCListener.cpp; sourceTree = "<group>"; };
+		AA79A1B129C76691001967EF /* XPCProcessing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCProcessing.h; sourceTree = "<group>"; };
+		AA79A1B229C76691001967EF /* XPCProcessing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCProcessing.cpp; sourceTree = "<group>"; };
+		AA79A1B329C76691001967EF /* XPCBroadcaster.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCBroadcaster.cpp; sourceTree = "<group>"; };
+		AA79A1B429C76691001967EF /* XPCDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCDisplay.cpp; sourceTree = "<group>"; };
+		AAAC0A222BD91E310031DC37 /* libhidapi.0.14.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhidapi.0.14.0.dylib; path = Frameworks/libhidapi.0.14.0.dylib; sourceTree = "<group>"; };
+		AAC39BCA2A2E14E700DC80C0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA79A12729C76470001967EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA59D5992BD9286900107700 /* XPLM in Frameworks */,
+				AA309AC02BD6BEC100379F80 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA27003C2BD951CC00D6E59A /* BravoCommands */ = {
+			isa = PBXGroup;
+			children = (
+				AA2700362BD951CC00D6E59A /* Bravo.cpp */,
+				AA2700372BD951CC00D6E59A /* Bravo.hpp */,
+				AA2700382BD951CC00D6E59A /* BravoProfile.cpp */,
+				AA2700392BD951CC00D6E59A /* BravoProfile.hpp */,
+				AA27003A2BD951CC00D6E59A /* XPCommand.cpp */,
+				AA27003B2BD951CC00D6E59A /* XPCommand.hpp */,
+			);
+			path = BravoCommands;
+			sourceTree = "<group>";
+		};
+		AA2700512BD951CC00D6E59A /* BravoControls */ = {
+			isa = PBXGroup;
+			children = (
+				AA27003D2BD951CC00D6E59A /* APButtonLabel.hpp */,
+				AA27003E2BD951CC00D6E59A /* APButtons.cpp */,
+				AA27003F2BD951CC00D6E59A /* APButtons.hpp */,
+				AA2700402BD951CC00D6E59A /* BravoControls.cpp */,
+				AA2700412BD951CC00D6E59A /* BravoControls.hpp */,
+				AA2700422BD951CC00D6E59A /* Button.cpp */,
+				AA2700432BD951CC00D6E59A /* Button.hpp */,
+				AA2700442BD951CC00D6E59A /* RotaryButtonLabel.hpp */,
+				AA2700452BD951CC00D6E59A /* RotaryButtons.cpp */,
+				AA2700462BD951CC00D6E59A /* RotaryButtons.hpp */,
+				AA2700472BD951CC00D6E59A /* Switch.cpp */,
+				AA2700482BD951CC00D6E59A /* Switch.hpp */,
+				AA2700492BD951CC00D6E59A /* Switches.cpp */,
+				AA27004A2BD951CC00D6E59A /* Switches.hpp */,
+				AA27004B2BD951CC00D6E59A /* SwitchLabel.hpp */,
+				AA27004C2BD951CC00D6E59A /* Toggle.cpp */,
+				AA27004D2BD951CC00D6E59A /* Toggle.hpp */,
+				AA27004E2BD951CC00D6E59A /* ToggleLabel.hpp */,
+				AA27004F2BD951CC00D6E59A /* ToggleSet.cpp */,
+				AA2700502BD951CC00D6E59A /* ToggleSet.hpp */,
+			);
+			path = BravoControls;
+			sourceTree = "<group>";
+		};
+		AA2700552BD951CC00D6E59A /* BravoJSON */ = {
+			isa = PBXGroup;
+			children = (
+				AA2700522BD951CC00D6E59A /* BravoJSON.cpp */,
+				AA2700532BD951CC00D6E59A /* BravoJSON.hpp */,
+				AA2700542BD951CC00D6E59A /* json.hpp */,
+			);
+			path = BravoJSON;
+			sourceTree = "<group>";
+		};
+		AA27005C2BD951CC00D6E59A /* BravoLights */ = {
+			isa = PBXGroup;
+			children = (
+				AA2700562BD951CC00D6E59A /* Annunciators.cpp */,
+				AA2700572BD951CC00D6E59A /* Annunciators.hpp */,
+				AA2700582BD951CC00D6E59A /* BravoLights.cpp */,
+				AA2700592BD951CC00D6E59A /* BravoLights.hpp */,
+				AA27005A2BD951CC00D6E59A /* StateMachine.cpp */,
+				AA27005B2BD951CC00D6E59A /* StateMachine.hpp */,
+			);
+			path = BravoLights;
+			sourceTree = "<group>";
+		};
+		AA2700622BD951CC00D6E59A /* bravoUSB */ = {
+			isa = PBXGroup;
+			children = (
+				AA27005D2BD951CC00D6E59A /* BravoUSB.cpp */,
+				AA27005E2BD951CC00D6E59A /* BravoUSB.hpp */,
+				AA27005F2BD951CC00D6E59A /* hid.c */,
+				AA2700602BD951CC00D6E59A /* hidapi_darwin.h */,
+				AA2700612BD951CC00D6E59A /* hidapi.h */,
+			);
+			path = bravoUSB;
+			sourceTree = "<group>";
+		};
+		AA27006C2BD951CC00D6E59A /* XPlane */ = {
+			isa = PBXGroup;
+			children = (
+				AA2700632BD951CC00D6E59A /* DataRef.cpp */,
+				AA2700642BD951CC00D6E59A /* DataRef.h */,
+				AA2700652BD951CC00D6E59A /* Honeycomb.cpp */,
+				AA2700662BD951CC00D6E59A /* Honeycomb.h */,
+				AA2700672BD951CC00D6E59A /* Plugin.cpp */,
+				AA2700682BD951CC00D6E59A /* Plugin.hpp */,
+				AA2700692BD951CC00D6E59A /* XPlane.cpp */,
+				AA27006A2BD951CC00D6E59A /* XPlane.hpp */,
+				AA27006B2BD951CC00D6E59A /* XPlaneEnvironment.hpp */,
+			);
+			path = XPlane;
+			sourceTree = "<group>";
+		};
+		AA27006D2BD951CC00D6E59A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AA27003C2BD951CC00D6E59A /* BravoCommands */,
+				AA2700512BD951CC00D6E59A /* BravoControls */,
+				AA2700552BD951CC00D6E59A /* BravoJSON */,
+				AA27005C2BD951CC00D6E59A /* BravoLights */,
+				AA2700622BD951CC00D6E59A /* bravoUSB */,
+				AA27006C2BD951CC00D6E59A /* XPlane */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AA79A12029C76470001967EF = {
+			isa = PBXGroup;
+			children = (
+				AA2AA4642BA3102C00C179CC /* COPYING.md */,
+				AA27006D2BD951CC00D6E59A /* Source */,
+				AA79A15D29C76596001967EF /* Library headers */,
+				AA79A12A29C76470001967EF /* Products */,
+				AA79A13529C76530001967EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA79A12A29C76470001967EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA79A12929C76470001967EF /* Honeycomb.xpl */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA79A13529C76530001967EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAAC0A222BD91E310031DC37 /* libhidapi.0.14.0.dylib */,
+				AAC39BCA2A2E14E700DC80C0 /* AppKit.framework */,
+				AA4955B329C8953B00513FFA /* XPLM */,
+				AA4955B429C8953B00513FFA /* XPWidgets */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA79A15D29C76596001967EF /* Library headers */ = {
+			isa = PBXGroup;
+			children = (
+				AA79A1A829C76683001967EF /* Wrappers */,
+				AA79A18A29C76632001967EF /* Widgets */,
+				AA79A15F29C765BC001967EF /* XPLM */,
+			);
+			path = "Library headers";
+			sourceTree = "<group>";
+		};
+		AA79A15F29C765BC001967EF /* XPLM */ = {
+			isa = PBXGroup;
+			children = (
+				AA79A17029C765EF001967EF /* XPLMCamera.h */,
+				AA79A17829C765EF001967EF /* XPLMDataAccess.h */,
+				AA79A17129C765EF001967EF /* XPLMDefs.h */,
+				AA79A17329C765EF001967EF /* XPLMDisplay.h */,
+				AA79A17529C765EF001967EF /* XPLMGraphics.h */,
+				AA79A17629C765EF001967EF /* XPLMInstance.h */,
+				AA79A17929C765EF001967EF /* XPLMMap.h */,
+				AA79A17729C765EF001967EF /* XPLMMenus.h */,
+				AA79A17F29C765EF001967EF /* XPLMNavigation.h */,
+				AA79A17A29C765EF001967EF /* XPLMPlanes.h */,
+				AA79A17B29C765EF001967EF /* XPLMPlugin.h */,
+				AA79A17229C765EF001967EF /* XPLMProcessing.h */,
+				AA79A17D29C765EF001967EF /* XPLMScenery.h */,
+				AA79A17429C765EF001967EF /* XPLMSound.h */,
+				AA79A17E29C765EF001967EF /* XPLMUtilities.h */,
+				AA79A17C29C765EF001967EF /* XPLMWeather.h */,
+			);
+			path = XPLM;
+			sourceTree = "<group>";
+		};
+		AA79A18A29C76632001967EF /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				AA79A18E29C7663F001967EF /* XPStandardWidgets.h */,
+				AA79A18C29C7663F001967EF /* XPUIGraphics.h */,
+				AA79A18D29C7663F001967EF /* XPWidgetDefs.h */,
+				AA79A18F29C7663F001967EF /* XPWidgets.h */,
+				AA79A18B29C7663F001967EF /* XPWidgetUtils.h */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		AA79A1A829C76683001967EF /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				AA79A1B329C76691001967EF /* XPCBroadcaster.cpp */,
+				AA79A1AD29C76691001967EF /* XPCBroadcaster.h */,
+				AA79A1B429C76691001967EF /* XPCDisplay.cpp */,
+				AA79A1A929C76691001967EF /* XPCDisplay.h */,
+				AA79A1B029C76691001967EF /* XPCListener.cpp */,
+				AA79A1AA29C76691001967EF /* XPCListener.h */,
+				AA79A1B229C76691001967EF /* XPCProcessing.cpp */,
+				AA79A1B129C76691001967EF /* XPCProcessing.h */,
+				AA79A1AB29C76691001967EF /* XPCWidget.cpp */,
+				AA79A1AC29C76691001967EF /* XPCWidget.h */,
+				AA79A1AE29C76691001967EF /* XPCWidgetAttachments.cpp */,
+				AA79A1AF29C76691001967EF /* XPCWidgetAttachments.h */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA79A12529C76470001967EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA27006F2BD951CC00D6E59A /* Bravo.hpp in Headers */,
+				AA79A1CC29C76743001967EF /* XPUIGraphics.h in Headers */,
+				AA2700872BD951CC00D6E59A /* ToggleSet.hpp in Headers */,
+				AA27008C2BD951CC00D6E59A /* Annunciators.hpp in Headers */,
+				AA79A1CD29C76743001967EF /* XPWidgetDefs.h in Headers */,
+				AA79A1CE29C76743001967EF /* XPWidgets.h in Headers */,
+				AA2700842BD951CC00D6E59A /* Toggle.hpp in Headers */,
+				AA79A1CF29C76743001967EF /* XPWidgetUtils.h in Headers */,
+				AA79A1C529C7672D001967EF /* XPCBroadcaster.h in Headers */,
+				AA79A1C629C7672D001967EF /* XPCDisplay.h in Headers */,
+				AA2700922BD951CC00D6E59A /* BravoUSB.hpp in Headers */,
+				AA27009B2BD951CC00D6E59A /* Plugin.hpp in Headers */,
+				AA79A1C729C7672D001967EF /* XPCListener.h in Headers */,
+				AA79A1C829C7672D001967EF /* XPCProcessing.h in Headers */,
+				AA2700812BD951CC00D6E59A /* Switches.hpp in Headers */,
+				AA27007D2BD951CC00D6E59A /* RotaryButtons.hpp in Headers */,
+				AA79A1C929C7672D001967EF /* XPCWidget.h in Headers */,
+				AA79A1CA29C7672D001967EF /* XPCWidgetAttachments.h in Headers */,
+				AA79A1B529C76719001967EF /* XPLMCamera.h in Headers */,
+				AA2700852BD951CC00D6E59A /* ToggleLabel.hpp in Headers */,
+				AA79A1B629C76719001967EF /* XPLMDataAccess.h in Headers */,
+				AA2700822BD951CC00D6E59A /* SwitchLabel.hpp in Headers */,
+				AA27009E2BD951CC00D6E59A /* XPlaneEnvironment.hpp in Headers */,
+				AA2700712BD951CC00D6E59A /* BravoProfile.hpp in Headers */,
+				AA79A1B729C76719001967EF /* XPLMDefs.h in Headers */,
+				AA27007A2BD951CC00D6E59A /* Button.hpp in Headers */,
+				AA79A1B829C76719001967EF /* XPLMDisplay.h in Headers */,
+				AA2700952BD951CC00D6E59A /* hidapi.h in Headers */,
+				AA79A1B929C76719001967EF /* XPLMGraphics.h in Headers */,
+				AA2700992BD951CC00D6E59A /* Honeycomb.h in Headers */,
+				AA2700732BD951CC00D6E59A /* XPCommand.hpp in Headers */,
+				AA79A1BA29C76719001967EF /* XPLMInstance.h in Headers */,
+				AA79A1BB29C76719001967EF /* XPLMMap.h in Headers */,
+				AA27008E2BD951CC00D6E59A /* BravoLights.hpp in Headers */,
+				AA2700742BD951CC00D6E59A /* APButtonLabel.hpp in Headers */,
+				AA2700782BD951CC00D6E59A /* BravoControls.hpp in Headers */,
+				AA27009D2BD951CC00D6E59A /* XPlane.hpp in Headers */,
+				AA27008A2BD951CC00D6E59A /* json.hpp in Headers */,
+				AA2700902BD951CC00D6E59A /* StateMachine.hpp in Headers */,
+				AA2700892BD951CC00D6E59A /* BravoJSON.hpp in Headers */,
+				AA79A1BC29C76719001967EF /* XPLMMenus.h in Headers */,
+				AA79A1BD29C76719001967EF /* XPLMNavigation.h in Headers */,
+				AA79A1BE29C76719001967EF /* XPLMPlanes.h in Headers */,
+				AA79A1BF29C76719001967EF /* XPLMPlugin.h in Headers */,
+				AA79A1C029C76719001967EF /* XPLMProcessing.h in Headers */,
+				AA2700942BD951CC00D6E59A /* hidapi_darwin.h in Headers */,
+				AA79A1C129C76719001967EF /* XPLMScenery.h in Headers */,
+				AA2700762BD951CC00D6E59A /* APButtons.hpp in Headers */,
+				AA2700972BD951CC00D6E59A /* DataRef.h in Headers */,
+				AA79A1C229C76719001967EF /* XPLMSound.h in Headers */,
+				AA79A1C329C76719001967EF /* XPLMUtilities.h in Headers */,
+				AA27007B2BD951CC00D6E59A /* RotaryButtonLabel.hpp in Headers */,
+				AA27007F2BD951CC00D6E59A /* Switch.hpp in Headers */,
+				AA79A1C429C76719001967EF /* XPLMWeather.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA79A12829C76470001967EF /* Honeycomb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA79A12D29C76470001967EF /* Build configuration list for PBXNativeTarget "Honeycomb" */;
+			buildPhases = (
+				AA79A12529C76470001967EF /* Headers */,
+				AA79A12629C76470001967EF /* Sources */,
+				AA79A12729C76470001967EF /* Frameworks */,
+				AA79A13C29C76530001967EF /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Honeycomb;
+			productName = Honeycomb;
+			productReference = AA79A12929C76470001967EF /* Honeycomb.xpl */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA79A12129C76470001967EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					AA79A12829C76470001967EF = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1530;
+					};
+				};
+			};
+			buildConfigurationList = AA79A12429C76470001967EF /* Build configuration list for PBXProject "Honeycomb" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA79A12029C76470001967EF;
+			productRefGroup = AA79A12A29C76470001967EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA79A12829C76470001967EF /* Honeycomb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA79A12629C76470001967EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA27007C2BD951CC00D6E59A /* RotaryButtons.cpp in Sources */,
+				AA2700912BD951CC00D6E59A /* BravoUSB.cpp in Sources */,
+				AA2700932BD951CC00D6E59A /* hid.c in Sources */,
+				AA2700702BD951CC00D6E59A /* BravoProfile.cpp in Sources */,
+				AA2700882BD951CC00D6E59A /* BravoJSON.cpp in Sources */,
+				AA27008D2BD951CC00D6E59A /* BravoLights.cpp in Sources */,
+				AA2700772BD951CC00D6E59A /* BravoControls.cpp in Sources */,
+				AA27006E2BD951CC00D6E59A /* Bravo.cpp in Sources */,
+				AA2700862BD951CC00D6E59A /* ToggleSet.cpp in Sources */,
+				AA2700802BD951CC00D6E59A /* Switches.cpp in Sources */,
+				AA2700752BD951CC00D6E59A /* APButtons.cpp in Sources */,
+				AA27009C2BD951CC00D6E59A /* XPlane.cpp in Sources */,
+				AA2700982BD951CC00D6E59A /* Honeycomb.cpp in Sources */,
+				AA2700962BD951CC00D6E59A /* DataRef.cpp in Sources */,
+				AA27008B2BD951CC00D6E59A /* Annunciators.cpp in Sources */,
+				AA27007E2BD951CC00D6E59A /* Switch.cpp in Sources */,
+				AA27008F2BD951CC00D6E59A /* StateMachine.cpp in Sources */,
+				AA2700722BD951CC00D6E59A /* XPCommand.cpp in Sources */,
+				AA2700792BD951CC00D6E59A /* Button.cpp in Sources */,
+				AA27009A2BD951CC00D6E59A /* Plugin.cpp in Sources */,
+				AA2700832BD951CC00D6E59A /* Toggle.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA79A12B29C76470001967EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "/Users/steve/X-Plane\\ 12/Resources/plugins/Honeycomb/mac_x64";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA79A12C29C76470001967EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "/Users/steve/X-Plane\\ 12/Resources/plugins/Honeycomb/mac_x64";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA79A12E29C76470001967EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_LINK_OBJC_RUNTIME = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = Beta1.01;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UR4A2K7ZA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				"DYLIB_INSTALL_NAME_BASE[arch=*]" = "$(INSTALL_PATH)";
+				EXECUTABLE_EXTENSION = xpl;
+				EXECUTABLE_PREFIX = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library headers\"";
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "(c) 2024 Steve Proctor - swp336@gmail.com";
+				"INIT_ROUTINE[arch=*]" = "";
+				INSTALL_PATH = "";
+				"INSTALL_PATH[sdk=*]" = "/Users/steve/X-Plane\\ 12/Resources/plugins/Honeycomb/mac_x64";
+				LD_DYLIB_INSTALL_NAME = Honeycomb.xpl;
+				LD_GENERATE_MAP_FILE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				MARKETING_VERSION = Beta1.01;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D",
+					"APL=1",
+					"-D",
+					"IBM=0",
+					"-D",
+					XPLM400,
+					"-D",
+					XPLM303,
+					"-D",
+					XPLM302,
+					"-D",
+					XPLM301,
+					"-DXPLM300",
+					"-D",
+					XPLM210,
+					"-D",
+					XPLM200,
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				"PRELINK_LIBS[arch=*]" = Yes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift/Honeycomb-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
+			};
+			name = Debug;
+		};
+		AA79A12F29C76470001967EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_LINK_OBJC_RUNTIME = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = Beta1.01;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UR4A2K7ZA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				"DYLIB_INSTALL_NAME_BASE[arch=*]" = "/Users/steve/X-Plane\\ 12/Resources/plugins/Honeycomb/mac_x64";
+				EXECUTABLE_EXTENSION = xpl;
+				EXECUTABLE_PREFIX = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Library headers\"";
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "(c) 2024 Steve Proctor - swp336@gmail.com";
+				INSTALL_PATH = "";
+				"INSTALL_PATH[sdk=*]" = "/Users/steve/X-Plane\\ 12/Resources/plugins/Honeycomb/mac_x64";
+				LD_DYLIB_INSTALL_NAME = Honeycomb.xpl;
+				LD_GENERATE_MAP_FILE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				MARKETING_VERSION = Beta1.01;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D",
+					"APL=1",
+					"-D",
+					"IBM=0",
+					"-D",
+					XPLM400,
+					"-D",
+					XPLM303,
+					"-D",
+					XPLM302,
+					"-D",
+					XPLM301,
+					"-DXPLM300",
+					"-D",
+					XPLM210,
+					"-D",
+					XPLM200,
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift/Honeycomb-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA79A12429C76470001967EF /* Build configuration list for PBXProject "Honeycomb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA79A12B29C76470001967EF /* Debug */,
+				AA79A12C29C76470001967EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA79A12D29C76470001967EF /* Build configuration list for PBXNativeTarget "Honeycomb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA79A12E29C76470001967EF /* Debug */,
+				AA79A12F29C76470001967EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA79A12129C76470001967EF /* Project object */;
+}
