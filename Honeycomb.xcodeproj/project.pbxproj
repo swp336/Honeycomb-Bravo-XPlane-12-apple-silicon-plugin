@@ -190,6 +190,10 @@
 		AA79A1B229C76691001967EF /* XPCProcessing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCProcessing.cpp; sourceTree = "<group>"; };
 		AA79A1B329C76691001967EF /* XPCBroadcaster.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCBroadcaster.cpp; sourceTree = "<group>"; };
 		AA79A1B429C76691001967EF /* XPCDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XPCDisplay.cpp; sourceTree = "<group>"; };
+		AA7C985B2BDFF58300F5DA31 /* Aircraft default configuration guide.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aircraft default configuration guide.pptx"; path = "Docs/Aircraft default configuration guide.pptx"; sourceTree = SOURCE_ROOT; };
+		AA7C985C2BDFF58300F5DA31 /* User guide.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "User guide.pptx"; path = "Docs/User guide.pptx"; sourceTree = SOURCE_ROOT; };
+		AA7C985D2BDFF58300F5DA31 /* Installation guide.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Installation guide.pptx"; path = "Docs/Installation guide.pptx"; sourceTree = SOURCE_ROOT; };
+		AA7C985E2BDFF58300F5DA31 /* Change log.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Change log.pptx"; path = "Docs/Change log.pptx"; sourceTree = SOURCE_ROOT; };
 		AAAC0A222BD91E310031DC37 /* libhidapi.0.14.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhidapi.0.14.0.dylib; path = Frameworks/libhidapi.0.14.0.dylib; sourceTree = "<group>"; };
 		AAC39BCA2A2E14E700DC80C0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -314,6 +318,7 @@
 		AA79A12029C76470001967EF = {
 			isa = PBXGroup;
 			children = (
+				AA7C985A2BDFF55E00F5DA31 /* Documentation */,
 				AA2AA4642BA3102C00C179CC /* COPYING.md */,
 				AA27006D2BD951CC00D6E59A /* Source */,
 				AA79A15D29C76596001967EF /* Library headers */,
@@ -403,6 +408,17 @@
 				AA79A1AF29C76691001967EF /* XPCWidgetAttachments.h */,
 			);
 			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		AA7C985A2BDFF55E00F5DA31 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C985B2BDFF58300F5DA31 /* Aircraft default configuration guide.pptx */,
+				AA7C985E2BDFF58300F5DA31 /* Change log.pptx */,
+				AA7C985D2BDFF58300F5DA31 /* Installation guide.pptx */,
+				AA7C985C2BDFF58300F5DA31 /* User guide.pptx */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

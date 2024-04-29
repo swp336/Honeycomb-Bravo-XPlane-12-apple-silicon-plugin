@@ -291,10 +291,10 @@ void Bravo::bravoLaminarALIA250Default(BravoProfile *thisAircraft) {
     thisAircraft -> AutopilotButton(APHDG, "sim/GPS/g1000n1_hdg");
     thisAircraft -> AutopilotButton(APNAV, "sim/GPS/g1000n1_nav");
     thisAircraft -> AutopilotButton(APAPR, "sim/GPS/g1000n1_apr");
-    thisAircraft -> AutopilotButton(APREV, "sim/GPS/g1000n1_softkey6");
+    thisAircraft -> AutopilotButton(APREV, "sim/GPS/g1000n1_bc");
     thisAircraft -> AutopilotButton(APALT, "sim/GPS/g1000n1_alt");
     thisAircraft -> AutopilotButton(APVS,  "sim/GPS/g1000n1_vs");
-    thisAircraft -> AutopilotButton(APIAS, NULL);
+    thisAircraft -> AutopilotButton(APIAS, "sim/GPS/g1000n1_flc");
     thisAircraft -> AutopilotButton(APAP,  "sim/GPS/g1000n1_ap");
     
     thisAircraft -> addCustomCommand(APHDG, TG6, "sim/GPS/g1000n1_nav12");
@@ -340,6 +340,15 @@ void Bravo::bravoLaminarALIA250Default(BravoProfile *thisAircraft) {
     thisAircraft -> activateIncrDecrRotary();
 
     lights -> defaultAnnunciatorDataRefs();                              // reset to defaults in case another plane has modified in an earlier flight
+
+    lights -> addAutopilotLightDataRef(APHDG, "sim/cockpit2/autopilot/heading_status");
+    lights -> addAutopilotLightDataRef(APNAV, "sim/cockpit2/autopilot/nav_status");
+    lights -> addAutopilotLightDataRef(APAPR, "sim/cockpit2/autopilot/approach_status");
+    lights -> addAutopilotLightDataRef(APREV, "sim/cockpit2/autopilot/backcourse_status");
+    lights -> addAutopilotLightDataRef(APALT, "sim/cockpit2/autopilot/altitude_hold_armed");
+    lights -> addAutopilotLightDataRef(APVS,  "sim/cockpit2/autopilot/vvi_status");
+    lights -> addAutopilotLightDataRef(APIAS, "sim/cockpit2/autopilot/speed_status");
+    lights -> addAutopilotLightDataRef(APAP,  "sim/cockpit2/autopilot/servos_on");
 
 }
 
@@ -428,9 +437,8 @@ void Bravo::bravoLaminarBeechcraftBaron58Default(BravoProfile *thisAircraft) {
     thisAircraft -> RotaryControl(RCVS, "sim/autopilot/nose_up_pitch_mode", "sim/autopilot/nose_down_pitch_mode", slow);
     thisAircraft -> addCustomCommand(RCVS, TG1, "sim/radios/transponder_10_up", "sim/radios/transponder_10_down", slow);
 
-    thisAircraft -> RotaryControl(RCALT, NULL, NULL, slow, fastest);
-    thisAircraft -> addCustomCommand(RCALT, TG6, "sim/instruments/barometer_up", "sim/instruments/barometer_down", slow);
-    thisAircraft -> addCustomCommand(RCALT, TG5, "sim/instruments/barometer_copilot_up", "sim/instruments/barometer_copilot_down", slow);
+    thisAircraft -> RotaryControl(RCALT, "sim/instruments/barometer_up", "sim/instruments/barometer_down", slow);
+    thisAircraft -> addCustomCommand(RCALT, TG6, "sim/instruments/barometer_copilot_up", "sim/instruments/barometer_copilot_down", slow);
     thisAircraft -> addCustomCommand(RCALT, TG1, "sim/radios/transponder_ones_up", "sim/radios/transponder_ones_down", slow);
 
     thisAircraft -> activateIncrDecrRotary();
@@ -1315,13 +1323,13 @@ void Bravo::bravoLaminarCirrusSR22Default(BravoProfile *thisAircraft) {
     thisAircraft -> AutopilotButton(APAP,  "sim/GPS/g1000n1_ap");
     
     thisAircraft -> addCustomCommand(APHDG, TG1, "sim/GPS/g1000n1_hdg_sync");
-    thisAircraft -> addCustomCommand(APHDG, TG5, "sim/GPS/g1000n3_nav12");
-    thisAircraft -> addCustomCommand(APHDG, TG6, "sim/GPS/g1000n1_com12");
+    thisAircraft -> addCustomCommand(APHDG, TG5, "sim/GPS/g1000n1_com12");
+    thisAircraft -> addCustomCommand(APHDG, TG6, "sim/GPS/g1000n3_nav12");
 
     thisAircraft -> addCustomCommand(APNAV, TG1, "sim/GPS/g1000n1_vnv");
     thisAircraft -> addCustomCommand(APNAV, TG4, "sim/GPS/gcu478/fpl");
-    thisAircraft -> addCustomCommand(APNAV, TG5, "sim/GPS/g1000n3_nav_ff");
-    thisAircraft -> addCustomCommand(APNAV, TG6, "sim/GPS/g1000n1_com_ff");
+    thisAircraft -> addCustomCommand(APNAV, TG5, "sim/GPS/g1000n1_com_ff");
+    thisAircraft -> addCustomCommand(APNAV, TG6, "sim/GPS/g1000n3_nav_ff");
 
     thisAircraft -> addCustomCommand(APAPR, TG4, "sim/GPS/gcu478/proc");
 
@@ -1333,7 +1341,7 @@ void Bravo::bravoLaminarCirrusSR22Default(BravoProfile *thisAircraft) {
     thisAircraft -> addCustomCommand(APVS, TG1, "sim/GPS/g1000n1_flc");
     thisAircraft -> addCustomCommand(APVS, TG4, "sim/GPS/gcu478/clr");
 
-    thisAircraft -> addCustomCommand(APIAS, TG4, "sim/GPS/gcu478/cursor");
+    thisAircraft -> addCustomCommand(APIAS, TG4, "sim/GPS/gcu479/cursor");
 
     thisAircraft -> addCustomCommand(APAP, TG4, "sim/GPS/gcu478/ent");
 
@@ -1343,13 +1351,13 @@ void Bravo::bravoLaminarCirrusSR22Default(BravoProfile *thisAircraft) {
     thisAircraft -> RotaryControl(RCVS,  "sim/GPS/g1000n1_nose_up", "sim/GPS/g1000n1_nose_down", slow);
     thisAircraft -> RotaryControl(RCALT, "sim/GPS/g1000n1_alt_outer_up", "sim/GPS/g1000n1_alt_outer_down", slow);
 
-    thisAircraft -> addCustomCommand(RCIAS, TG6, "sim/GPS/g1000n1_com_inner_up", "sim/GPS/g1000n1_com_inner_down", slow, fastest);
-    thisAircraft -> addCustomCommand(RCIAS, TG5, "sim/GPS/g1000n1_nav_inner_up", "sim/GPS/g1000n1_nav_inner_down", slow);
     thisAircraft -> addCustomCommand(RCIAS, TG4, "sim/GPS/g1000n3_fms_inner_up", "sim/GPS/g1000n3_fms_inner_down", slow);
+    thisAircraft -> addCustomCommand(RCIAS, TG5, "sim/GPS/g1000n1_com_inner_up", "sim/GPS/g1000n1_com_inner_down", slow, fastest);
+    thisAircraft -> addCustomCommand(RCIAS, TG6, "sim/GPS/g1000n1_nav_inner_up", "sim/GPS/g1000n1_nav_inner_down", slow);
 
-    thisAircraft -> addCustomCommand(RCCRS, TG6, "sim/GPS/g1000n1_com_outer_up", "sim/GPS/g1000n1_com_outer_down", slow);
-    thisAircraft -> addCustomCommand(RCCRS, TG5, "sim/GPS/g1000n1_nav_outer_up", "sim/GPS/g1000n1_nav_outer_down", slow);
     thisAircraft -> addCustomCommand(RCCRS, TG4, "sim/GPS/g1000n3_fms_outer_up", "sim/GPS/g1000n3_fms_outer_down", slow);
+    thisAircraft -> addCustomCommand(RCCRS, TG5, "sim/GPS/g1000n1_com_outer_up", "sim/GPS/g1000n1_com_outer_down", slow);
+    thisAircraft -> addCustomCommand(RCCRS, TG6, "sim/GPS/g1000n1_nav_outer_up", "sim/GPS/g1000n1_nav_outer_down", slow);
 
     thisAircraft -> addCustomCommand(RCHDG, TG4, "sim/GPS/gcu478/range_down", "sim/GPS/gcu478/range_up", slow);
 
