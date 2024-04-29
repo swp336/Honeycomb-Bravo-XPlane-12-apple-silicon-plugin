@@ -61,7 +61,7 @@ PLUGIN_API int XPluginStart(char *outName, char *outSignature, char *outDescript
         
     strncpy(outName, "HoneycombOnArm64MacOS", 255);
     strncpy(outSignature, "swp.testbuild.honeycomb", 255);
-    strncpy(outDescription, "Honeycomb configurator for Apple Silicon Macs - vBeta1.01", 255);
+    strncpy(outDescription, "Honeycomb configurator for Apple Silicon Macs - vBeta1.02", 255);
     
     xplane = std::make_shared<XPlane>();
     lights = std::make_shared<BravoLights>();
