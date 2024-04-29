@@ -68,7 +68,7 @@ void Honeycomb::startApp() {
         if (xplane) {
             
             xplane -> createMenu("Honeycomb for Mac");
-            xplane -> addMenuEntry("vBeta1.1 - Copyright 2024 Steve Proctor - swp336@gmail.com", [this] { menuHandlerA(); });
+            xplane -> addMenuEntry("vBeta1.01 - Copyright 2024 Steve Proctor - swp336@gmail.com", [this] { menuHandlerA(); });
 //            xplane -> addMenuEntry("Zibo 737", [this] { menuHandlerB(); });
 //            xplane -> addMenuEntry("Laminar 737", [this] { menuHandlerC(); });
 //            xplane -> addMenuEntry("McDonnell Douglas MD-82", [this] { menuHandlerD(); });
